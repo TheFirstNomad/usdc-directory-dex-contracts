@@ -1,11 +1,10 @@
 # usdc-directory-dex-contracts
 
-Core smart contracts powering liquidity and swapping for the USDC Directory DEX on Arc Testnet.
+Core smart contracts for liquidity provision and token swapping in the USDC Directory DEX.
 
 ## Overview
 
-This repository contains the contracts used for the DEX functionality in [usdc.directory](https://usdc.directory).  
-USDC serves as the native gas token on Arc Testnet.
+This repository contains the contracts used for the DEX features on **Arc Testnet**, enabling users to add/remove liquidity and perform swaps with USDC as the native gas token.
 
 ## Deployed Contracts (Arc Testnet)
 
@@ -13,7 +12,7 @@ USDC serves as the native gas token on Arc Testnet.
 
 | Contract     | Address                                      | Description |
 |--------------|----------------------------------------------|-------------|
-| Factory      | `0x11...6d3A2`                               | Creates liquidity pairs |
+| Factory      | `0x11...6d3A2`                               | Liquidity pair factory |
 | Router       | `0xd1f489eF0Cd899e203c3Eee7B79aBF25895F5920` | Main router for `addLiquidityETH`, swaps, and liquidity removal |
 
 **Native Gas Token (WETH equivalent):**  
@@ -21,18 +20,13 @@ USDC serves as the native gas token on Arc Testnet.
 
 ## Purpose
 
-These contracts enable users to:
-- Add and remove liquidity to token pairs
-- Execute token swaps
-- Use USDC seamlessly as both trading asset and gas token
-
-This deployment provides a stable foundation for the USDC Directory DEX on Arc Testnet.
+These contracts power the liquidity and swap functionality in [usdc.directory](https://usdc.directory).
 
 ## Repository Contents
 
-- `ArcFactory.sol` — Liquidity pair factory
-- `ArcRouter.sol` — Main router for liquidity and swaps
-- `ArcPair.sol` — Base pair contract (created automatically by the Factory)
+- `ArcFactory.sol`
+- `ArcRouter.sol`
+- `ArcPair.sol`
 
 ## License
 
